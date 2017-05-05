@@ -1,38 +1,19 @@
 body {
+    background-color: #fff5cb;
+    color: #262262;
     font-family: Helvetica, arial, sans-serif;
-    font-size: 14px;
-    line-height: 1.6;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    background-color: white;
-    padding: 30px;
+    font-size: calc(1em + 1vw);
+    line-height: 1.25;
+    margin: 1em auto;
+    width: 90%;
 }
 
-body > *:first-child {
-    margin-top: 0 !important;
-}
-
-body > *:last-child {
-    margin-bottom: 0 !important;
+body * + * {
+    margin-top: 1.5rem;
 }
 
 a {
     color: #4183C4;
-}
-
-a.absent {
-    color: #cc0000;
-}
-
-a.anchor {
-    display: block;
-    padding-left: 30px;
-    margin-left: -30px;
-    cursor: pointer;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
 }
 
 h1,
@@ -41,89 +22,91 @@ h3,
 h4,
 h5,
 h6 {
-    margin: 20px 0 10px;
-    padding: 0;
-    font-weight: bold;
     -webkit-font-smoothing: antialiased;
     cursor: text;
+    font-weight: bold;
+    padding: 0;
     position: relative;
 }
 
-h1:hover a.anchor,
-h2:hover a.anchor,
-h3:hover a.anchor,
-h4:hover a.anchor,
-h5:hover a.anchor,
-h6:hover a.anchor {
-    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA09pVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoMTMuMCAyMDEyMDMwNS5tLjQxNSAyMDEyLzAzLzA1OjIxOjAwOjAwKSAgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OUM2NjlDQjI4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OUM2NjlDQjM4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo5QzY2OUNCMDg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo5QzY2OUNCMTg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PsQhXeAAAABfSURBVHjaYvz//z8DJYCRUgMYQAbAMBQIAvEqkBQWXI6sHqwHiwG70TTBxGaiWwjCTGgOUgJiF1J8wMRAIUA34B4Q76HUBelAfJYSA0CuMIEaRP8wGIkGMA54bgQIMACAmkXJi0hKJQAAAABJRU5ErkJggg==) no-repeat 10px center;
-    text-decoration: none;
-}
-
-h1 tt,
-h1 code {
-    font-size: inherit;
-}
-
-h2 tt,
-h2 code {
-    font-size: inherit;
-}
-
-h3 tt,
-h3 code {
-    font-size: inherit;
-}
-
-h4 tt,
-h4 code {
-    font-size: inherit;
-}
-
-h5 tt,
-h5 code {
-    font-size: inherit;
-}
-
-h6 tt,
-h6 code {
-    font-size: inherit;
-}
-
 h1 {
-    font-size: 28px;
-    color: black;
+    font-size: 2em;
 }
 
 h2 {
-    font-size: 24px;
-    border-bottom: 1px solid #cccccc;
-    color: black;
+    border-bottom: 1px solid #ccc;
+    font-size: 1.5em;
 }
 
 h3 {
-    font-size: 18px;
+    font-size: 1.25em;
 }
 
-h4 {
-    font-size: 16px;
-}
-
-h5 {
-    font-size: 14px;
-}
-
+h4,
+h5,
 h6 {
-    color: #777777;
-    font-size: 14px;
+    color: #777;
+    font-size: 1.25em;
 }
 
-p,
-blockquote,
-ul,
-ol,
-dl,
-li,
-table,
-pre {
-    margin: 15px 0;
+.visually-hidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visually-hidden:active,
+.visually-hidden:focus {
+    clip: auto;
+    color: #0b0c0c;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    width: auto;
+}
+
+a:focus {
+    background-color: #ffbf47;
+    outline: 3px solid #ffbf47
+}
+
+.wrapper {
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "header header header"
+        "nav nav nav"
+        "content content content"
+        "footer  footer  footer";
+}
+
+.nav {
+    grid-area: nav;
+}
+
+.content {
+    grid-area: content;
+}
+
+.header {
+    grid-area: header;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+@media screen and (min-width: 30em) {
+    .wrapper {
+        grid-template-areas:
+            "header header header"
+            "content content nav"
+            "footer  footer  footer";
+    }
 }
