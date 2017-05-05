@@ -70,4 +70,5 @@
 ## Quick takeaways
 + http://a11yweekly.com
 + http://mogonthetyne.com
++ http://www.westgateark.org.uk
 + http://sponsorapuppy.org.uk
