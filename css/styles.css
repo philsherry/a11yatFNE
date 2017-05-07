@@ -105,7 +105,7 @@ a:focus {
     grid-area: footer;
 }
 
-@media screen and (orientation:portrait) and (min-width: 30em) {
+@media all and (min-width: 60em) and (orientation:landscape) {
     .wrapper {
         grid-template-areas:
             "header header header"
