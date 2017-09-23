@@ -99,6 +99,7 @@ a:focus {
 
 .header {
     grid-area: header;
+    max-width: 65ch;
 }
 
 .footer {

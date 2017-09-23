@@ -4,13 +4,14 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-    <title>Adventures in accessibility testing :: #a11yatFNE</title>
+    <title>Adventures in accessibility testing</title>
     <link rel="stylesheet" href="css/styles.css" />
 </head>
 
 <body>
 
     <a href="#content" class="visually-hidden">Skip to main content</a>
+    <a href="#navigation" class="visually-hidden">Skip to navigation</a>
 
     <div class="wrapper">
 
@@ -18,6 +19,7 @@
             <h1>Adventures in accessibility testing</h1>
 
             <p>Links to content mentioned in my talks at <a href="https://frontendne.co.uk/events/2017-05-04">FrontendNE</a> and <a href="https://www.meetup.com//Public-Design-WY/events/239747499/?showDescription=true">Public Design WY</a>, <a href="https://www.meetup.com/ministry-of-testing-nottingham/events/240905457/">NottsTest</a>, and <a href="http://sunderlanddigital.com">Sunderland Digital</a>.</p>
+            <p>The slides are currently amazingly inaccessible &mdash; <em>I know, right</em> &mdash; but you can find <a href="https://speakerdeck.com/frontendne/adventures-in-accessibility-testing">Adventures in accessibility testing on Speakerdeck</a>. I&#8217;m working on a better solution to this.</p>
         </header>
 
         <main id="content" class="content">
@@ -130,7 +132,7 @@
             </ul>
         </main>
 
-        <nav class="nav">
+        <nav id="navigation" class="nav">
             <h2>Table of contents</h2>
             <ul>
                 <li><a href="#toc-1">Intro</a></li>
@@ -152,7 +154,7 @@
         </nav>
 
         <footer class="footer">
-            &copy; 2017 Phil Sherry.
+            &copy; 2017 <a href="https://philsherry.com/">Phil Sherry</a>.
         </footer>
 
     </div>
