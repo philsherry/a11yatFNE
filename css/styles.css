@@ -1,14 +1,28 @@
+@font-face {
+  font-family: system;
+  font-style: normal;
+  font-weight: 300;
+  src: local(".SFNSText-Light"),
+    local(".HelveticaNeueDeskInterface-Light"),
+    local(".LucidaGrandeUI"),
+    local("Ubuntu Light"),
+    local("Segoe UI Light"),
+    local("Roboto-Light"),
+    local("DroidSans"),
+    local("Tahoma");
+}
+
 body {
   background-color: #fff5cb;
   color: #262262;
-  font-family: Helvetica, arial, sans-serif;
+  font-family: "system";
   font-size: calc(1em + 1vw);
   line-height: 1.25;
   margin: 1em auto;
   width: 90%;
 }
 
-body *+* {
+body * + * {
   margin-top: 1.5rem;
 }
 
@@ -69,6 +83,7 @@ h6 {
 .visually-hidden:active,
 .visually-hidden:focus {
   clip: auto;
+  clip-path: initial;
   color: #0b0c0c;
   height: auto;
   margin: 0;
